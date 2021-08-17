@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+
+* {
+    font-family: 'Bauhaus 93', Verdana, sans-serif;
+}
+
+body {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 40px 25px;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.headerlinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,28 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@model JenniesEpiserverWebSite.Models.ViewModels.SiteViewModelBase
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="~/Static/Logos/MyCatLogo.png" />
+            </div>
+            <ul class="headerlinks">
+               @foreach (var item in Model.HeaderLinks.FilteredItems)
+                {
+                   <li>
+                       @Html.ContentLink(item.ContentLink)
+                   </li>
+                }
+            </ul>
+        </div>
+    </header>
+    @RenderBody()
+</body>
+</html>

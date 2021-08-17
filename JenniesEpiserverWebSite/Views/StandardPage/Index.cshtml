@@ -1,0 +1,12 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model JenniesEpiserverWebSite.Models.ViewModels.StandardPageViewModel
+
+<div>
+    <h1>@Html.PropertyFor(m => m.StandardPage.Heading)</h1>
+
+    <div>
+        @Html.PropertyFor(m => m.StandardPage.MainBody)
+    </div>
+</div>
