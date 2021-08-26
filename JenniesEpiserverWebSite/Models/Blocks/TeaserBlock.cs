@@ -11,18 +11,21 @@ namespace JenniesEpiserverWebSite.Models.Blocks
     public class TeaserBlock : BlockData
     {
         [Display(
+            Name = "Heading",
             GroupName = SystemTabNames.Content,
             Order = 1)] 
         [CultureSpecific]
         public virtual string Heading { get; set; }
 
         [Display(
+            Name = "Subheading",
             GroupName = SystemTabNames.Content,
             Order = 2)]
         [CultureSpecific]
         public virtual string Subheading { get; set; }
 
         [Display(
+            Name = "Image",
             GroupName = SystemTabNames.Content,
             Order = 3)]
         [CultureSpecific]
@@ -30,8 +33,9 @@ namespace JenniesEpiserverWebSite.Models.Blocks
         public virtual ContentReference Image { get; set; }
 
         [Display(
-           GroupName = SystemTabNames.Content,
-           Order = 4)]
+            Name = "Pagelink",
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
         public virtual PageReference Link { get; set; }
     }
 }

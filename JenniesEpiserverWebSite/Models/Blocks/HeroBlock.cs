@@ -34,14 +34,5 @@ namespace JenniesEpiserverWebSite.Models.Blocks
             Order = 2)]
         [CultureSpecific]
         public virtual string SubHeading { get; set; }
-        /*
-                [CultureSpecific]
-                [Display(
-                    Name = "Name",
-                    Description = "Name field's description",
-                    GroupName = SystemTabNames.Content,
-                    Order = 1)]
-                public virtual string Name { get; set; }
-         */
     }
 }
