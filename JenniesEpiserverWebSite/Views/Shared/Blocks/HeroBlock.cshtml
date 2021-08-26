@@ -1,0 +1,18 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model JenniesEpiserverWebSite.Models.Blocks.HeroBlock
+
+<div class="HeroBlock">
+    <div class="row">
+        <div class="col-4">
+            @Html.PropertyFor(m => m.Image)
+        </div>
+        <div class="col-8">
+            <h1 class="hero">@Html.PropertyFor(m => m.Heading)</h1>
+            <p>@Html.PropertyFor(m => m.SubHeading)</p>
+        </div>
+    </div>
+</div>
+
+

@@ -4,6 +4,7 @@
 @model JenniesEpiserverWebSite.Models.ViewModels.StartPageViewModel
 
 
-<div>
-    @Html.PropertyFor(m => m.StartPage.MainBody)
+<div
+    @Html.PropertyFor(m => m.StartPage.TopContentArea, new { CssClass = "row", ChildrenCssClass = "col-12" })
+    @Html.PropertyFor(m => m.StartPage.MainContentArea, new { CssClass = "row", ChildrenCssClass = "col-4" })
 </div>

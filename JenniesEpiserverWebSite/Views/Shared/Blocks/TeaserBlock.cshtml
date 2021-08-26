@@ -1,0 +1,17 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model JenniesEpiserverWebSite.Models.Blocks.TeaserBlock
+
+<div class="TeaserBlock">
+    <a href="@Url.ContentUrl(Model.Link)">
+        <div>
+            <h1>@Html.PropertyFor(m => m.Heading)</h1>
+            <h5>@Html.PropertyFor(m => m.Subheading)</h5>
+        </div>
+        <div>
+            @Html.PropertyFor(m => m.Image)
+        </div>
+    </a>
+</div>
+

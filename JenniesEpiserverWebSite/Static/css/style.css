@@ -6,6 +6,25 @@
 
 body {
     color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    font-size: 100%;
+}
+
+header {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+h1.hero {
+    font-size: 4.5em;
+    margin-top: 4%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -15,11 +34,21 @@ ul {
 }
 
 li {
-    margin: 40px 25px;
+    margin-left: 25px;
+    margin-right: 25px;
     color: black;
 }
 
-a {
+img {
+    max-width: 100%;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
     color: black;
     text-decoration: none;
 }
@@ -29,12 +58,45 @@ a:active {
     text-decoration: underline;
 }
 
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .headerlinks {
     display: flex;
     flex-direction: row;
+    margin-top: 60px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+}
+
+li.active {
+    color: black;
+    text-decoration: underline;
+}
+
+.TeaserBlock {
+    border-style: groove;
+    border-color: lightgrey;
+    margin: 10px;
+}
+
+.HeroBlock {
+    margin: 10px;
+}
+
+footer {
+    border-top: 1px solid lightgrey;
+    margin-top: 15px;
+}
+
+footer > p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 90%;
+    font-style: italic;
 }

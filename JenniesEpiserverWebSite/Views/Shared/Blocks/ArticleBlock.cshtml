@@ -1,0 +1,11 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model JenniesEpiserverWebSite.Models.Blocks.ArticleBlock
+
+<div>
+    <h1>@Html.PropertyFor(m => m.Heading)</h1>
+</div>
+<div>
+    @Html.PropertyFor(m => m.MainBody)
+</div>
