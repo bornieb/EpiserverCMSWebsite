@@ -21,8 +21,8 @@ namespace JenniesEpiserverWebSite.Controllers
 
         public ActionResult Index(ArticlePage currentPage)
         {
-            var articlePageViewModel = new ArticlePageViewModel();
-            articlePageViewModel.ArticlePage = currentPage;
+            var articlePageViewModel = new PageViewModel<ArticlePage>(currentPage);
+            articlePageViewModel.CurrentPage = currentPage;
 
             var startPage = _contentLoader.Get<StartPage>(ContentReference.StartPage);
 

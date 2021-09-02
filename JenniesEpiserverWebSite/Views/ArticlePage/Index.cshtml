@@ -1,8 +1,10 @@
 ﻿@using EPiServer.Core
 @using EPiServer.Web.Mvc.Html
+@using JenniesEpiserverWebSite.Models.ViewModels
+@using JenniesEpiserverWebSite.Models.Pages
 
-@model JenniesEpiserverWebSite.Models.ViewModels.ArticlePageViewModel
+@model PageViewModel<ArticlePage>
 
 <div>
-  @Html.PropertyFor(m => m.ArticlePage.MainContentArea)
+  @Html.PropertyFor(m => m.CurrentPage.MainContentArea)
 </div>
