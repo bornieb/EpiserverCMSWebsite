@@ -1,10 +1,11 @@
 ﻿@using EPiServer.Core
 @using EPiServer.Web.Mvc.Html
+@using JenniesEpiserverWebSite.Models.ViewModels
 
-@model JenniesEpiserverWebSite.Models.ViewModels.StartPageViewModel
+@model PageViewModel<JenniesEpiserverWebSite.Models.Pages.StartPage>
 
 
 <div
-    @Html.PropertyFor(m => m.StartPage.TopContentArea, new { CssClass = "row", ChildrenCssClass = "col-12" })
-    @Html.PropertyFor(m => m.StartPage.MainContentArea, new { CssClass = "row", ChildrenCssClass = "col-4" })
+    @Html.PropertyFor(m => m.CurrentPage.TopContentArea, new { CssClass = "row", ChildrenCssClass = "col-12" })
+    @Html.PropertyFor(m => m.CurrentPage.MainContentArea, new { CssClass = "row", ChildrenCssClass = "col-4" })
 </div>

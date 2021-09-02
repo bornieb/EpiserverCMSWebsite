@@ -6,7 +6,7 @@ using System.Web;
 
 namespace JenniesEpiserverWebSite.Models.ViewModels
 {
-    public abstract class SiteViewModelBase
+    public abstract class SiteViewModelBase : PageData
     {
         public ContentArea HeaderLinks { get; set; }
     }

@@ -241,6 +241,7 @@
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\ViewModels\ArticlePageViewModel.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Models\ViewModels\SiteViewModelBase.cs" />
     <Compile Include="Models\ViewModels\StandardPageViewModel.cs" />
     <Compile Include="Models\ViewModels\StartPageViewModel.cs" />

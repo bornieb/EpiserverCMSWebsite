@@ -14,8 +14,8 @@ namespace JenniesEpiserverWebSite.Controllers
     {
         public ActionResult Index(StartPage currentPage)
         {
-            var model = new StartPageViewModel();
-            model.StartPage = currentPage;
+            var model = new PageViewModel<StartPage>(currentPage);
+            model.CurrentPage = currentPage;
             model.HeaderLinks = currentPage.HeaderLinks;
 
             return View(model);
